@@ -1,7 +1,7 @@
 # Gather test coverage
 
 It gathers percentage test coverage using slather and saves in TEST_COVERAGE environment variable. 
-Mind that coverage reports must be available under standard xcode paths and slather must be installed.
+Mind that coverage reports must be available under standard xcode paths.
 
 
 ## How to use this Step

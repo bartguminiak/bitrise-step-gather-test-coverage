@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ex
 
+gem install slather -v 2.4.7
+
 output=$(slather coverage -s --scheme DrugStars --workspace "$workspace_path" "$project_path")
 output=${output##*Coverage: }
 output=${output%%Slathered*}

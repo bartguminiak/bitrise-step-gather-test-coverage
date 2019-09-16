@@ -2,7 +2,7 @@ title: |-
   Exposes percentage code test coverage
 summary: |
   It gathers percentage test coverage using slather and saves in TEST_COVERAGE environment variable. 
-  Mind that coverage reports must be available under standard xcode paths and slather must be installed.
+  Mind that coverage reports must be available under standard xcode paths.
 description: |
    Saves percentage test coverage in environment variable
 website: https://github.com/bartguminiak/bitrise-step-gather-test-coverage
