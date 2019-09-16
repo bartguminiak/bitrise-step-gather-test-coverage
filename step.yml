@@ -1,0 +1,44 @@
+title: |-
+  Exposes percentage code test coverage
+summary: |
+  It gathers percentage test coverage using slather and saves in TEST_COVERAGE environment variable. 
+  Mind that coverage reports must be available under standard xcode paths and slather must be installed.
+description: |
+   Saves percentage test coverage in environment variable
+website: https://github.com/bartguminiak/bitrise-step-gather-test-coverage
+source_code_url: https://github.com/bartguminiak/bitrise-step-gather-test-coverage
+support_url: https://github.com/bartguminiak/bitrise-step-gather-test-coverage
+host_os_tags:
+  - osx-10.10
+  - ubuntu-16.04
+  - ios
+
+type_tags:
+  - test
+
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: false
+run_if: ""
+
+toolkit:
+  bash:
+    entry_file: step.sh
+
+inputs:
+ - project_path:
+   opts:
+     title: "Project path"
+     is_expand: true
+     is_required: true
+     
+ - project_path:
+   opts:
+     title: "Workspace path"
+     is_expand: true
+     is_required: true
+
+outputs:
+  - TEST_COVERAGE:
+    opts:
+      title: "Test coverage"
