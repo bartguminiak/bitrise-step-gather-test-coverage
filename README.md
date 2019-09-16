@@ -3,6 +3,8 @@
 It gathers percentage test coverage using slather and saves in TEST_COVERAGE environment variable. 
 Mind that coverage reports must be available under standard xcode paths.
 
+Place .slather.yml config file in the main project folder
+
 
 ## How to use this Step
 
