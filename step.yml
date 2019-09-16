@@ -32,7 +32,7 @@ inputs:
      is_expand: true
      is_required: true
      
- - project_path:
+ - workspace_path:
    opts:
      title: "Workspace path"
      is_expand: true
